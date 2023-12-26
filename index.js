@@ -29,7 +29,7 @@ async function run() {
   });
 
   app.get('/', (req, res) => {
-    console.log('welcome');
+    res.send('welcome');
   });
 
   app.post('/registerAdmin', async (req, res) => {
